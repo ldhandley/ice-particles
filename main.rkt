@@ -4,22 +4,24 @@
 
 (define-classic-rune (ice-storm)
   #:background "blue"
-  #:foreground (circle 40 'solid 'green)
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/2143494-200.png")
   (spawn-mod-blueprint pak-folder mod-name "IceStorm"))
 
 (define-classic-rune (ice-ball)
   #:background "blue"
-  #:foreground (circle 40 'solid 'red)
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/788969-200.png")
   (spawn-mod-blueprint pak-folder mod-name "IceBall"))
 
 (define-classic-rune (ice-ball-hit)
   #:background "blue"
-  #:foreground (circle 40 'solid 'yellow)
+  #:foreground (overlay/align "left" "bottom"
+               (bitmap/url "https://static.thenounproject.com/png/788969-200.png")
+               (scale 0.35 (bitmap/url "https://static.thenounproject.com/png/13018-200.png")))
   (spawn-mod-blueprint pak-folder mod-name "IceBallHit"))
 
 (define-classic-rune (ice-aura)
   #:background "blue"
-  #:foreground (circle 40 'solid 'blue)
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/2143405-200.png")
   (spawn-mod-blueprint pak-folder mod-name "IceAura"))
 
 (define-classic-rune-lang my-mod-lang #:eval-from main.rkt
