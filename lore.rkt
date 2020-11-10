@@ -10,12 +10,12 @@
          )
 
 (define (name)
-  "Ice Particles"
+  "Illusions of Ice"
   )
 
 (define (description)
   @md{
-    This is the @b{Ice Particles} Rune Collection.
+    This is the @b{Illusions of Ice} Rune Collection.
   })
 
 (define (runes)
