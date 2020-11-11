@@ -1,48 +1,38 @@
 #lang at-exp racket
 
-(require ice-particles/main
-	 website-js)
+(require ice-particles
+	 codespells/lore)
 
-(provide name
-         description
-         runes
-         preview-image
-         )
-
-(define (name)
-  "Illusions of Ice"
-  )
-
-(define (description)
+(define-rune-collection-lore 
+  #:name "Illusions of Ice"
+  #:description 
   @md{
     This is the @b{Illusions of Ice} Rune Collection.
-  })
-
-(define (runes)
+  }
+  #:rune-lores
   (list
-    (list
-     "Ice Storm"
-     (ice-storm-rune)
-     "" 
+    (rune-lore
+     #:name        "Ice Storm"
+     #:rune        (ice-storm-rune)
+     #:description "" 
      )
-    (list
-     "Ice Ball Rune"
-     (ice-ball-rune)
-     "" 
+    (rune-lore
+     #:name        "Ice Ball Rune"
+     #:rune        (ice-ball-rune)
+     #:description "" 
      )
-    (list
-     "Ice Ball Hit Rune"
-     (ice-ball-hit-rune)
-     "" 
+    (rune-lore
+     #:name        "Ice Ball Hit Rune"
+     #:rune        (ice-ball-hit-rune)
+     #:description "" 
      )
-    (list
-     "Ice Aura Rune"
-     (ice-aura-rune)
-     "" 
+    (rune-lore
+     #:name        "Ice Aura Rune"
+     #:rune        (ice-aura-rune)
+     #:description "" 
      )
     )
+  #:preview-image (ice-storm-rune)
   )
 
-(define (preview-image)
-  (ice-storm-rune)
-  )
+
