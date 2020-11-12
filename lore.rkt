@@ -3,6 +3,10 @@
 (require ice-particles
 	 codespells/lore)
 
+(define-runtime-path preview-image
+                     "images/preview.png"
+                     )
+
 (define-rune-collection-lore 
   #:name "Illusions of Ice"
   #:description 
@@ -34,7 +38,7 @@
       #:description "This rune create an magical aura of ice." 
       )
     )
-  #:preview-image (ice-storm-rune)
+  #:preview-image preview-image
   )
 
 
