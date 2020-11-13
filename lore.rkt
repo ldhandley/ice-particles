@@ -34,7 +34,7 @@
       }
       )
     (rune-lore
-      #:name        "Ice Ball Rune"
+      #:name        "Ice Ball"
       #:rune        (ice-ball-rune)
       #:description 
       @md{
@@ -47,7 +47,7 @@
 	 ice-ball-demo.mp4)
       })
     (rune-lore
-      #:name        "Ice Ball Hit Rune"
+      #:name        "Ice Ball Hit"
       #:rune        (ice-ball-hit-rune)
       #:description @md{
       An illusionary blast of ice that the young @b{Snow Mages of Kafdor} use as a sign of grief -- for they are not permitted to speak nor weep during the @b{Long Winter}.
@@ -59,7 +59,7 @@
       }
       )
     (rune-lore
-      #:name        "Ice Aura Rune"
+      #:name        "Ice Aura"
       #:rune        (ice-aura-rune)
       #:description @md{
       An aura of ice that the @b{Snow Mages of Kafdor} don when they ascend to the @b{Council of Elders.}
