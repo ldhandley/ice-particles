@@ -23,6 +23,7 @@
       #:name        "Ice Storm"
       #:rune        (ice-storm-rune)
       #:description @md{
+      A storm of ice that the young @b{Snow Mages of Kafdor} use to signal the elders when they reach the summit of the @b{Endless Mountain}.
 
       @(rune-code-example 
 	 (my-mod-lang #:with-paren-runes? #t)
@@ -36,7 +37,9 @@
       #:name        "Ice Ball Rune"
       #:rune        (ice-ball-rune)
       #:description 
-      @md{This rune creates a ball of ice magic.
+      @md{
+      An illusionary ball of ice that the young @b{Snow Mages of Kafdor} surround themselves with during the @b{Season of Courtship}.
+
 
       @(rune-code-example 
 	 (my-mod-lang #:with-paren-runes? #t)
@@ -47,7 +50,7 @@
       #:name        "Ice Ball Hit Rune"
       #:rune        (ice-ball-hit-rune)
       #:description @md{
-      This rune create an explosion of ice magic, which lasts only briefly.
+      An illusionary blast of ice that the young @b{Snow Mages of Kafdor} use as a sign of grief -- for they are not permitted to speak nor weep during the @b{Long Winter}.
 
       @(rune-code-example 
 	 (my-mod-lang #:with-paren-runes? #t)
@@ -59,7 +62,7 @@
       #:name        "Ice Aura Rune"
       #:rune        (ice-aura-rune)
       #:description @md{
-      This rune create an magical aura of ice.
+      An aura of ice that the @b{Snow Mages of Kafdor} don when they ascend to the @b{Council of Elders.}
 
       @(rune-code-example 
 	 (my-mod-lang #:with-paren-runes? #t)
