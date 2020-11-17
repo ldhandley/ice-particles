@@ -3,9 +3,6 @@
 (require ice-particles
 	 codespells/lore)
 
-(define-runtime-path preview-image
-                     "images/preview.png")
-
 
 (define-rune-collection-lore 
   #:name "Illusions of Ice"
@@ -71,7 +68,7 @@
       }
       )
     )
-  #:preview-image preview-image
+  #:preview-image preview.png
   )
 
 
