@@ -3,24 +3,24 @@
 (require ice-particles/mod-info)
 
 (define-classic-rune (ice-storm)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2143494-200.png")
   (spawn-mod-blueprint pak-folder mod-name "IceStorm"))
 
 (define-classic-rune (ice-ball)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/788969-200.png")
   (spawn-mod-blueprint pak-folder mod-name "IceBall"))
 
 (define-classic-rune (ice-ball-hit)
-  #:background "blue"
+  #:background "red"
   #:foreground (overlay/align "left" "bottom"
                (bitmap/url "https://static.thenounproject.com/png/788969-200.png")
                (scale 0.35 (bitmap/url "https://static.thenounproject.com/png/13018-200.png")))
   (spawn-mod-blueprint pak-folder mod-name "IceBallHit"))
 
 (define-classic-rune (ice-aura)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2143405-200.png")
   (spawn-mod-blueprint pak-folder mod-name "IceAura"))
 
@@ -33,7 +33,7 @@
    (build-path (current-directory) ".." ".."))
   
   (once-upon-a-time
-   #:world (voxel-world)
+   #:world (cave-world)
    #:aether (demo-aether
              #:lang (my-mod-lang #:with-paren-runes? #t))))
 

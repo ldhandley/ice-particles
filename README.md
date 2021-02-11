@@ -1,3 +1,33 @@
 ice-particles
 =============
-`fire-particles` is a CodeSpells mod! Learn more at https://codespells.org.
+`ice-particles` is a CodeSpells mod! Learn more at https://codespells.org.
+
+### Installation
+
+Clone this repo
+
+```
+cd ice-particles
+raco pkg install
+raco codespells-install
+```
+
+Open up `main.rkt` and adjust the `codespells-workspace` accordingly. Run.
+
+### Including this Rune Collection as a Package
+
+`(require-mod ice-particles)`
+
+This gives you access to `ice-particles:my-mod-lang` which you can combine into your mod's rune lang with `append-rune-langs`.
+
+### Unreal Development
+
+If you want to start up the Unreal project (`/Unreal`), install the following:
+* FX Variety Pack: https://www.unrealengine.com/marketplace/en-US/item/963c62c38abb403aa08b575584b765d0
+  * Place in: `Plugins/IceParticles/Content/FXVarietyPack`
+
+### Releasing New Content
+
+If you have only changed the Racket code, just push to Github.
+
+If you have changed or added Unreal assets, push to Github and run `raco codespells-release`.
