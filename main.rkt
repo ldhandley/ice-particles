@@ -1,6 +1,7 @@
 #lang codespells
 
 (require ice-particles/mod-info)
+(require 2htdp/image)
 
 (define-classic-rune (ice-storm)
   #:background "red"
